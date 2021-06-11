@@ -1,0 +1,48 @@
+ideas = {
+    ### Outsider recruitment laws ###
+	outsider_recruitment_laws = {
+		law = yes
+		outsider_law_no_earthlings = {
+			picture = no_outsiders
+			available = {
+				is_alien_nation = yes
+			}
+			visible = {
+				is_alien_nation = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				non_core_manpower = -1
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			cancel_if_invalid = no
+		}
+	}
+    ### Manpower laws ###
+    mobilization_laws = {
+		law = yes
+		mobilization_law_prime_zetans = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+            picture = funded_militia
+			available = {
+				is_alien_nation = yes
+			}
+			visible = {
+				is_alien_nation = yes
+			}
+			modifier = {
+				conscription = 0.02
+				training_time_army_factor = 0.15
+			}
+		}
+    }
+}
