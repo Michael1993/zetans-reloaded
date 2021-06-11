@@ -1,0 +1,294 @@
+ideas = {
+	country = {
+		####################################
+		# Base national spirits fot Zetans #
+		####################################
+		zetan_alien = {
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = -0.10
+				decryption_factor = -0.60
+				encryption_factor = 0.60
+				resistance_target = 0.30
+				exodus_occupier_appeal = -0.50
+				exodus_national_appeal = -10.0
+				min_export = -1
+			}
+		}
+		zetan_advanced = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.25
+				research_speed_factor = 0.25
+			}
+		}
+		###############################
+		# Starting focus "rewards"    #
+		###############################
+		zetan_crashlanded_idea = {
+			picture = generic_catastrophe
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.60
+				attrition = 0.10
+				heat_attrition_factor = 0.05
+				supply_consumption_factor = 0.20
+				out_of_supply_factor = 0.20
+			}
+			name = zetan_crashlanded_idea
+		}
+		zetan_alone_idea = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_factor = -0.40
+				production_speed_infrastructure_factor = -0.40
+				production_speed_industrial_complex_factor = -0.40
+				production_speed_arms_factory_factor = -0.40
+				production_speed_dockyard_factor = -0.40
+			}
+			name = zetan_alone_idea
+		}
+		zetan_afraid_idea = {
+			picture = chi_army_corruption3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.60
+				production_speed_bunker_factor = 0.60
+				production_speed_coastal_bunker_factor = 0.40
+				production_speed_bunker2_factor = 0.40
+				production_speed_anti_air_building_factor = 0.20
+				army_org = -15
+				army_attack_factor = -0.30
+				army_defence_factor = 0.20
+			}
+		}
+		###########################
+		# 'Afraid' advancements + #
+		###########################
+		zetan_cautious = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.40
+				production_speed_bunker_factor = 0.40
+				production_speed_coastal_bunker_factor = 0.30
+				production_speed_bunker2_factor = 0.30
+				production_speed_anti_air_building_factor = 0.20
+				production_speed_radar_station_factor = 0.15
+				army_org = -10
+				army_attack_factor = -0.15
+				army_defence_factor = 0.15
+			}
+		}
+		zetan_curious = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.20
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.10
+				production_speed_bunker2_factor = 0.10
+				production_speed_radar_station_factor = 0.25
+				production_speed_air_base_factor = 0.05
+				production_speed_naval_base_factor = 0.05
+				army_org = -5
+				army_attack_factor = -0.05
+				army_defence_factor = 0.10
+			}
+		}
+		zetan_eager = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.10
+				production_speed_radar_station_factor = 0.25
+				production_speed_air_base_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+				army_org = 5
+				army_attack_factor = 0.15
+				army_defence_factor = 0.05
+			}
+		}
+		###########################
+		# 'Afraid' advancements - #
+		###########################
+		zetan_frantic = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.70
+				production_speed_bunker_factor = 0.90
+				production_speed_coastal_bunker_factor = 0.60
+				production_speed_bunker2_factor = 0.60
+				production_speed_anti_air_building_factor = 0.30
+				army_org = -10
+				army_attack_factor = -0.30
+				army_defence_factor = 0.40
+			}
+		}
+		zetan_terrified = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.80
+				production_speed_bunker_factor = 1
+				production_speed_coastal_bunker_factor = 0.80
+				production_speed_bunker2_factor = 0.80
+				production_speed_anti_air_building_factor = 0.60
+				army_org = -5
+				army_attack_factor = -0.30
+				army_defence_factor = 0.50
+			}
+		}
+		zetan_paranoid = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.90
+				production_speed_bunker_factor = 1
+				production_speed_coastal_bunker_factor = 1
+				production_speed_bunker2_factor = 1
+				production_speed_anti_air_building_factor = 0.80
+				army_org = 5
+				army_attack_factor = -0.30
+				army_defence_factor = 0.80
+			}
+		}
+		#############################
+		# Crash-landed advancements #
+		#############################
+		zetan_crashlanded_idea2 = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.40
+				attrition = 0.05
+				heat_attrition_factor = 0.05
+				supply_consumption_factor = 0.15
+				out_of_supply_factor = 0.15
+			}
+			name = zetan_crashlanded_idea
+		}
+		zetan_crashlanded_idea3 = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.20
+				supply_consumption_factor = 0.10
+				out_of_supply_factor = 0.10
+			}
+			name = zetan_crashlanded_idea
+		}
+	}
+	hidden_ideas = {
+		###################################
+		# Afraid of Aliens - Wargoal Idea #
+		###################################
+		zetan_afraid_of_aliens_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				if = {
+					limit = {
+						country_exists = UFO
+					}
+					add_state_claim = 389
+					UFO = {
+						ROOT = {
+							grant_wargoals_on_core_states_of_prev = yes
+						}
+					}
+				}
+			}
+		}
+		####################################
+		# Earthlings? - Warning Event Idea #
+		####################################
+		zetan_warning_about_earthlings = {
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			on_remove = {
+				UFO = {
+					country_event = nf_ufo.4
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+﻿l_english:
+  # Hotfix
+  implant_tech_access_tech:0 "Implant technology"
+
+  # Starting 3 focuses
+  zetan_crashed:0 "Crashed"
+  zetan_crashed_desc:0 "We have crash-landed on a strange, alien planet."
+
+  zetan_alone:0 "Alone"
+  zetan_alone_desc:0 "We are cut off from Homeworld. Abandoned. Alone."
+
+  zetan_afraid:0 "Afraid"
+  zetan_afraid_desc:0 "The natives of this world have not been kind to us."
+
+  # Industry building focuses
+  zetan_area_51_bunker:0 "The Bunker under Area 51"
+  zetan_area_51_bunker_desc:0 "The accursed research facility deep underground below Area 51 has many materials that we could use."
+
+  zetan_recycle_composites:0 "Recycling Composites"
+  zetan_recycle_composites_desc:0 "When we took the base from the earthlings, the fight destroyed a part of it. We should re-use what we can from the wreckage."
+
+  zetan_print_circuitry:0 "Print Circuitry"
+  zetan_print_circuitry_desc:0 "The base has some unnecessary machinery, like \"Water Purification\". We should repurpose it into something more useful."
+
+  zetan_access_advanced:0 "Access Advanced Materials"
+  zetan_access_advanced_desc:0 "The base has several locked storage rooms, full of advanced components. We should break them open."
+
+  zetan_establishing_our_presence:0 "Establishing Our Presence"
+  zetan_establishing_our_presence_desc:0 "The area around the base is a worthless desert. We will build it up, so it's at least a little less ugly."
+
+  zetan_start_rebuilding:0 "Start Rebuilding"
+  zetan_start_rebuilding_desc:0 "Now that we have established our presence, we can begin building new things. Maybe start expanding?"
+
+  zetan_restart_weapon_production:0 "Restart Weapon Production"
+  zetan_restart_weapon_production_desc:0 "If we want to be able to achieve something while stuck here, we will need weapons."
+
+  zetan_reprogramming_the_mainframe:0 "Reprogram the Mainframe"
+  zetan_reprogramming_the_mainframe_desc:0 "The computer that kept us locked up should be of some use... After we reprogram it, finally."
+
+  zetan_taking_control:0 "Taking Control"
+  zetan_taking_control_desc:0 "It is time to take control of the situation."
+
+  # Afraid + focuses
+  zetan_curiosity:0 "Curiosity"
+  zetan_curiosity_desc:0 "This world we found ourselves on is strange and full of secrets. We should find out more!"
+
+  zetan_whole_new_world:0 "A Whole New World"
+  zetan_whole_new_world_desc:0 "There is a whole new world out there! It's shining, it's shimmering, it's splendid. Let us explore it."
+
+  zetan_full_of_secrets:0 "Full of Secrets"
+  zetan_full_of_secrets_desc:0 "Strange and unusual places and creatures inhabit this world. We want to see them all."
+
+  # Afraid - focuses
+  zetan_fear:0 "Fear"
+  zetan_fear_desc:0 "This world is nothing but a barren wasteland filled with savage primates. We should watch our every step."
+
+  zetan_us_vs_world:0 "Us Against the World"
+  zetan_us_vs_world_desc:0 "We can't trust the flora or the fauna of this planet. Close all doors, barricade all openings."
+
+  zetan_paranoia:0 "Paranoia"
+  zetan_paranoia_desc:0 "They are all out to get us. This entire planet is plotting against us."
+
+  # Understanding Land, Air, Water
+  zetan_understand_water:0 "Understanding Water"
+  zetan_understand_water_desc:0 ""
+
+  zetan_learn_about_water:0 "Learning About Water"
+  zetan_learn_about_water_desc:0 ""
+
+  zetan_take_water:0 "Take the Water!"
+  zetan_take_water_desc:0 ""
+
+  zetan_understand_air:0 "Understanding Air"
+  zetan_understand_air_desc:0 ""
+
+  zetan_learn_about_air:0 "Learning About Air"
+  zetan_learn_about_air_desc:0 ""
+
+  zetan_take_air:0 "Take the Air!"
+  zetan_take_air_desc:0 ""
+
+  zetan_understand_land:0 "Understanding Land"
+  zetan_understand_land_desc:0 ""
+
+  zetan_learn_about_land:0 "Learning About Land"
+  zetan_learn_about_land_desc:0 ""
+
+  zetan_take_land:0 "Take the Land!"
+  zetan_take_land_desc:0 ""
+
+  # Crash-landed focus advancements
+  zetan_adaptation:0 "Adaptation"
+  zetan_adaptation_desc:0 ""
+
+  zetan_acclimatization:0 "Acclimatization"
+  zetan_acclimatization_desc:0 ""
+
+  zetan_home_in_the_wastes:0 "Home in the Wastes"
+  zetan_home_in_the_wastes_desc:0 ""
+
+  # Secrets of the Wasteland focuses
+  zetan_secrets_of_the_wasteland:0 "Secrets of the Wasteland"
+  zetan_secrets_of_the_wasteland_desc:0 ""
+  zetan_secrets_of_the_wasteland_tooltip:0 "Does not have national spirit §YCrash-landed§!"
+
+  zetan_implant_tech:0 "Earthling Body Modification"
+  zetan_implant_tech_desc:0 "Some earthlings use cybernetic implants to enhance their bodies. Albeit primitive, we could still benefit from such a technology."
+
+  zetan_fast_metal_contraptions:0 "Fast Metal Contraptions"
+  zetan_fast_metal_contraptions_desc:0 "If there is one thing we have learned during our time here, is that earthlings love fast things and will always think of new ways to go even faster."
+
+  zetan_download_naval_schematics:0 "Downloading Naval Schematics"
+  zetan_download_naval_schematics_desc:0 "Earthlings used to have access to creative naval machine schematics. It seems this weird sentient computer still has some of them."
+
+  zetan_personal_protection_from_metal:0 "Personal Protection From Metal"
+  zetan_personal_protection_from_metal_desc:0 "What a simplistic idea, encasing yourself in metal for personal protection. Nevertheless, it's the best we can do on this backwards planet."
+  

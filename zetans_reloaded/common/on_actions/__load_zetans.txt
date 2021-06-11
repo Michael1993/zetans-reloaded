@@ -1,0 +1,26 @@
+on_actions = {
+	on_startup = {
+		effect = {
+            if = {
+				limit = {
+					has_global_flag = UFO_invasion_enabled_global_flag
+				}
+                add_to_array = { GLOBAL.early_tagswitch_countries = UFO }
+				
+				# NCR gains war goal(s) after 561 days!
+				NCR = {
+					add_timed_idea = {
+						idea = zetan_afraid_of_aliens_idea
+						days = 561 # 21 days + 9 * 60 days
+					}
+				}
+				UFO = {
+					add_timed_idea = {
+						idea = zetan_warning_about_earthlings
+						days = 201
+					}
+				}
+			}
+        }
+    }
+}

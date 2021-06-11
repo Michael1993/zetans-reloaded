@@ -1,0 +1,59 @@
+#######################
+#  Zetan events       #
+#  Written by Misi    #
+#  Copied from Attis  #
+#  Originally by Zusk #
+#######################
+
+add_namespace = nf_ufo
+
+country_event = {
+	id = nf_ufo.1
+	title = nf_ufo.1.t
+	desc = nf_ufo.1.d
+	picture = GFX_event_generic_ufo_crash
+	is_triggered_only = yes
+
+	option = {
+		name = nf_ufo.1.a
+		add_ideas = zetan_crashlanded_idea
+	}
+}
+
+country_event = {
+	id = nf_ufo.2
+	title = nf_ufo.2.t
+	desc = nf_ufo.2.d
+	picture = GFX_event_generic_ufo_crash
+	is_triggered_only = yes
+
+	option = {
+		name = nf_ufo.2.a
+		add_ideas = zetan_alone_idea
+	}
+}
+
+country_event = {
+	id = nf_ufo.3
+	title = nf_ufo.3.t
+	desc = nf_ufo.3.d
+	picture = GFX_event_generic_ufo_crash
+	is_triggered_only = yes
+
+	option = {
+		name = nf_ufo.3.a
+		add_ideas = zetan_afraid_idea
+	}
+}
+
+country_event = {
+	id = nf_ufo.4
+	title = nf_ufo.4.t
+	desc = nf_ufo.4.d
+	# picture = GFX_event_generic_ufo_crash
+	is_triggered_only = yes
+
+	option = {
+		name = nf_ufo.4.a
+	}
+}

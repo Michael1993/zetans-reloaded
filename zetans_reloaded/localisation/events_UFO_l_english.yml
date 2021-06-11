@@ -1,0 +1,16 @@
+﻿l_english:
+  nf_ufo.1.t:0 "Crash-landed"
+  nf_ufo.1.d:0 "We were tasked with surveying planet X-Z-443-AG, the fourth planet of a medium-sized solar system. It was classified as \"mostly harmless\". We were in the middle of writing up our report about the planet and its inhabitants when some kind of malfunction happened to our ship and we were forced to land on the surface. The landing was... less than ideal. Nearly all of our equipment was destroyed in the crash and the ship was completely wrecked."
+  nf_ufo.1.a:0 "Ouch."
+
+  nf_ufo.2.t:0 "Alone"
+  nf_ufo.2.d:0 "Almost immediately we were captured and brought to an underground facility for investigation. We eventually broke free and overpowered our captors, securing the base. However, something happened on the surface in the meantime that caused the mainframe computer to put everything on lockdown. Without our equipment we were unable to escape. From deep underground we had no way of contacting Homeworld and so they must think us dead."
+  nf_ufo.2.a:0 "A prison with no guards is still a prison."
+
+  nf_ufo.3.t:0 "Afraid"
+  nf_ufo.3.d:0 "Finally, after one-hundred and fifty years, we managed to convince the mainframe computer to open the base and let us return to the surface. What we found was utter madness. Creatures defying the laws of nature, constantly decaying corpses walking (and glowing...?) as if alive. After what we endured below, we expected the surface to be less hostile. We were wrong."
+  nf_ufo.3.a:0 "We have to defend ourselves."
+
+  nf_ufo.4.t:0 "Earthlings?"
+  nf_ufo.4.d:0 "It seems that the earthlings have noticed our presence and are preparing an attack against us. We estimate that we have about §R360§! days to prepare."
+  nf_ufo.4.a:0 "We will defend ourselves."

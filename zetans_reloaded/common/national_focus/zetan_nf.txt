@@ -1,0 +1,1130 @@
+focus_tree = {
+	id = zetan_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UFO
+		}
+	}
+	default = no
+	################
+	# Crash-landed #
+	################
+	focus = {
+		id = zetan_crashed
+		icon = GFX_goal_area_51
+		cost = 7
+		x = 12
+		y = 1
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_crashed entered"
+			}
+			country_event = nf_ufo.1
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_crashed exited"
+			}
+		}
+	}
+	#########
+	# Alone #
+	#########
+	focus = {
+		id = zetan_alone
+		icon = GFX_goal_area_51
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = zetan_crashed
+		prerequisite = {
+			focus = zetan_crashed
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_alone entered"
+			}
+			country_event = nf_ufo.2
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_alone exited"
+			}
+		}
+	}
+	##########
+	# Afraid #
+	##########
+	focus = {
+		id = zetan_afraid
+		icon = GFX_goal_area_51
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = zetan_alone
+		prerequisite = {
+			focus = zetan_alone
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_afraid entered"
+			}
+			country_event = nf_ufo.3
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_afraid exited"
+			}
+		}
+	}
+	############################
+	# The Bunker under Area 51 #
+	############################
+	focus = {
+		id = zetan_area_51_bunker
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -7
+		y = 1
+		relative_position_id = zetan_afraid
+		prerequisite = {
+			focus = zetan_afraid
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_area_51_bunker entered"
+			}
+			389 = {
+				add_resource = {
+					type = metal
+					amount = 10
+				}
+				add_resource = {
+					type = energy
+					amount = 20
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_area_51_bunker exited"
+			}
+		}
+	}
+	######################
+	# Recycle Composites #
+	######################
+	focus = {
+		id = zetan_recycle_composites
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -2
+		y = 1
+		relative_position_id = zetan_area_51_bunker
+		prerequisite = {
+			focus = zetan_area_51_bunker
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_recycle_composites entered"
+			}
+			389 = {
+				add_resource = {
+					type = composites
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_recycle_composites exited"
+			}
+		}
+	}
+	###################
+	# Print Circuitry #
+	###################
+	focus = {
+		id = zetan_print_circuitry
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_area_51_bunker
+		prerequisite = {
+			focus = zetan_area_51_bunker
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_print_circuitry entered"
+			}
+			389 = {
+				add_resource = {
+					type = circuitry
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_print_circuitry exited"
+			}
+		}
+	}
+	#############################
+	# Access Advanced Materials #
+	#############################
+	focus = {
+		id = zetan_access_advanced
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 2
+		y = 1
+		relative_position_id = zetan_area_51_bunker
+		prerequisite = {
+			focus = zetan_area_51_bunker
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_access_advanced entered"
+			}
+			389 = {
+				add_resource = {
+					type = advanced
+					amount = 12
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_access_advanced exited"
+			}
+		}
+	}
+	#############################
+	# Establishing Our Presence #
+	#############################
+	focus = {
+		id = zetan_establishing_our_presence
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_print_circuitry
+		prerequisite = {
+			focus = zetan_recycle_composites
+		}
+		prerequisite = {
+			focus = zetan_print_circuitry
+		}
+		prerequisite = {
+			focus = zetan_access_advanced
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_establishing_our_presence entered"
+			}
+			389 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			201 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			329 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			333 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			463 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_establishing_our_presence exited"
+			}
+		}
+	}
+	####################
+	# Start Rebuilding #
+	####################
+	focus = {
+		id = zetan_start_rebuilding
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_establishing_our_presence
+		prerequisite = {
+			focus = zetan_establishing_our_presence
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_start_rebuilding entered"
+			}
+			389 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_start_rebuilding exited"
+			}
+		}
+	}
+	###############################
+	# Reprogramming the Mainframe #
+	###############################
+	focus = {
+		id = zetan_reprogramming_the_mainframe
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_print_circuitry
+		prerequisite = {
+			focus = zetan_recycle_composites
+		}
+		prerequisite = {
+			focus = zetan_print_circuitry
+		}
+		prerequisite = {
+			focus = zetan_access_advanced
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_reprogramming_the_mainframe entered"
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = electronics
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_reprogramming_the_mainframe exited"
+			}
+		}
+	}
+	#############################
+	# Restart Weapon Production #
+	#############################
+	focus = {
+		id = zetan_restart_weapon_production
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_reprogramming_the_mainframe
+		prerequisite = {
+			focus = zetan_reprogramming_the_mainframe
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_restart_weapon_production entered"
+			}
+			389 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_restart_weapon_production exited"
+			}
+		}
+	}
+	##################
+	# Taking Control #
+	##################
+	focus = {
+		id = zetan_taking_control
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_restart_weapon_production
+		prerequisite = {
+			focus = zetan_restart_weapon_production
+		}
+		prerequisite = {
+			focus = zetan_start_rebuilding
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_taking_control entered"
+			}
+			add_research_slot = 1
+			remove_ideas = zetan_alone_idea
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_taking_control exited"
+			}
+		}
+	}
+	##############
+	# Curiousity #
+	##############
+	focus = {
+		id = zetan_curiosity
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_afraid
+		mutually_exclusive = {
+			focus = zetan_fear
+		}
+		prerequisite = {
+			focus = zetan_afraid
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_curiosity entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_afraid_idea
+				add_idea = zetan_cautious
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_curiosity exited"
+			}
+		}
+	}
+	#####################
+	# A Whole New World #
+	#####################
+	focus = {
+		id = zetan_whole_new_world
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_curiosity
+		prerequisite = {
+			focus = zetan_curiosity
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_whole_new_world entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_cautious
+				add_idea = zetan_curious
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_whole_new_world exited"
+			}
+		}
+	}
+	###################
+	# Full of Secrets #
+	###################
+	focus = {
+		id = zetan_full_of_secrets
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_whole_new_world
+		prerequisite = {
+			focus = zetan_whole_new_world
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_full_of_secrets entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_curious
+				add_idea = zetan_eager
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_full_of_secrets exited"
+			}
+		}
+	}
+	########
+	# Fear #
+	########
+	focus = {
+		id = zetan_fear
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_afraid
+		mutually_exclusive = {
+			focus = zetan_curiosity
+		}
+		prerequisite = {
+			focus = zetan_afraid
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_fear entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_afraid_idea
+				add_idea = zetan_frantic
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_fear exited"
+			}
+		}
+	}
+	########################
+	# Us Against the World #
+	########################
+	focus = {
+		id = zetan_us_vs_world
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_fear
+		prerequisite = {
+			focus = zetan_fear
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_us_vs_world entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_frantic
+				add_idea = zetan_terrified
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_us_vs_world exited"
+			}
+		}
+	}
+	############
+	# Paranoia #
+	############
+	focus = {
+		id = zetan_paranoia
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_us_vs_world
+		prerequisite = {
+			focus = zetan_us_vs_world
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_paranoia entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_terrified
+				add_idea = zetan_paranoid
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_paranoia exited"
+			}
+		}
+	}
+	#######################
+	# Understanding Water #
+	#######################
+	focus = {
+		id = zetan_understand_water
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_paranoia
+		prerequisite = {
+			focus = zetan_paranoia
+			focus = zetan_full_of_secrets
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_water entered"
+			}
+			navy_experience = 40
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_water exited"
+			}
+		}
+	}
+	########################
+	# Learning About Water #
+	########################
+	focus = {
+		id = zetan_learn_about_water
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_understand_water
+		prerequisite = {
+			focus = zetan_understand_water
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_water entered"
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_naval_doctrine
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_water exited"
+			}
+		}
+	}
+	###################
+	# Take the Water! #
+	###################
+	focus = {
+		id = zetan_take_water
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_learn_about_water
+		prerequisite = {
+			focus = zetan_learn_about_water
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_water entered"
+			}
+			set_technology = {
+				naval_tech_level_settler = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_water exited"
+			}
+		}
+	}
+	#####################
+	# Understanding Air #
+	#####################
+	focus = {
+		id = zetan_understand_air
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_paranoia
+		prerequisite = {
+			focus = zetan_paranoia
+			focus = zetan_full_of_secrets
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_air entered"
+			}
+			air_experience = 40
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_air exited"
+			}
+		}
+	}
+	###################
+	# Learn About Air #
+	###################
+	focus = {
+		id = zetan_learn_about_air
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_understand_air
+		prerequisite = {
+			focus = zetan_understand_air
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_air entered"
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_air_doctrine
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_air exited"
+			}
+		}
+	}
+	#################
+	# Take the Air! #
+	#################
+	focus = {
+		id = zetan_take_air
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_learn_about_air
+		prerequisite = {
+			focus = zetan_learn_about_air
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_take_air entered"
+			}
+			set_technology = {
+				air_tech_level_scientific = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_take_air exited"
+			}
+		}
+	}
+	######################
+	# Understanding Land #
+	######################
+	focus = {
+		id = zetan_understand_land
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 3
+		y = 1
+		relative_position_id = zetan_paranoia
+		prerequisite = {
+			focus = zetan_paranoia
+			focus = zetan_full_of_secrets
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_land entered"
+			}
+			army_experience = 40
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_understand_land exited"
+			}
+		}
+	}
+	####################
+	# Learn About Land #
+	####################
+	focus = {
+		id = zetan_learn_about_land
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_understand_land
+		prerequisite = {
+			focus = zetan_understand_land
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_land entered"
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_land_doctrine
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_learn_about_land exited"
+			}
+		}
+	}
+	##################
+	# Take the Land! #
+	##################
+	focus = {
+		id = zetan_take_land
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_learn_about_land
+		prerequisite = {
+			focus = zetan_learn_about_land
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_take_land entered"
+			}
+			set_technology = {
+				vehicles_tech_level_settler = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_take_land exited"
+			}
+		}
+	}
+	##############
+	# Adaptation #
+	##############
+	focus = {
+		id = zetan_adaptation
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 4
+		y = 1
+		relative_position_id = zetan_afraid
+		prerequisite = {
+			focus = zetan_afraid
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_adaptation entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_crashlanded_idea
+				add_idea = zetan_crashlanded_idea2
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_adaptation exited"
+			}
+		}
+	}
+	###################
+	# Acclimatization #
+	###################
+	focus = {
+		id = zetan_acclimatization
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_adaptation
+		prerequisite = {
+			focus = zetan_adaptation
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_acclimatization entered"
+			}
+			swap_ideas = {
+				remove_idea = zetan_crashlanded_idea2
+				add_idea = zetan_crashlanded_idea3
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_acclimatization exited"
+			}
+		}
+	}
+	######################
+	# Home in the Wastes #
+	######################
+	focus = {
+		id = zetan_home_in_the_wastes
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_acclimatization
+		prerequisite = {
+			focus = zetan_acclimatization
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_home_in_the_wastes entered"
+			}
+			remove_ideas = zetan_crashlanded_idea3
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_home_in_the_wastes exited"
+			}
+		}
+	}
+	############################
+	# Secrets of the Wasteland #
+	############################
+	focus = {
+		id = zetan_secrets_of_the_wasteland
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 12
+		y = 1
+		relative_position_id = zetan_afraid
+		prerequisite = {
+			focus = zetan_afraid
+		}
+		available = {
+			custom_trigger_tooltip = {
+				AND = {
+					NOT = { has_idea = zetan_crashlanded_idea }
+					NOT = { has_idea = zetan_crashlanded_idea2 }
+					NOT = { has_idea = zetan_crashlanded_idea3 }
+				}	
+				tooltip = zetan_secrets_of_the_wasteland_tooltip
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_secrets_of_the_wasteland entered"
+			}
+			add_political_power = 100
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_secrets_of_the_wasteland exited"
+			}
+		}
+	}
+	###############################
+	# Earthling Body Modification #
+	###############################
+	focus = {
+		id = zetan_implant_tech
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -3
+		y = 1
+		relative_position_id = zetan_secrets_of_the_wasteland
+		prerequisite = {
+			focus = zetan_secrets_of_the_wasteland
+		}
+		available = {
+			AND = {
+				OR = {
+					# Controls Vault City
+					AND = {
+						controls_state = 291
+						VLT = {
+							OR = {
+								AND = {
+									exists = yes
+									is_subject_of = ROOT
+								}
+								exists = no
+							}
+						}
+					}
+					# Controls Twin Mothers
+					AND = {
+						controls_state = 554
+						TTM = {
+							OR = {
+								AND = {
+									exists = yes
+									is_subject_of = ROOT
+								}
+								exists = no
+							}
+						}
+					}
+
+				}
+				has_tech = infantry_tech_level_scientific
+			}
+			
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech entered"
+			}
+			set_technology = {
+				implant_tech_access_tech = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech exited"
+			}
+		}
+	}
+	###########################
+	# Fast Metal Contraptions #
+	###########################
+	focus = {
+		id = zetan_fast_metal_contraptions
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_secrets_of_the_wasteland
+		prerequisite = {
+			focus = zetan_secrets_of_the_wasteland
+		}
+		available = {
+			AND = {
+				controls_state = 478
+				EHT = {
+					OR = {
+						AND = {
+							exists = yes
+							is_subject_of = ROOT
+						}
+						exists = no
+					}
+				}
+				has_tech = vehicles_tech_level_settler
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech entered"
+			}
+			set_technology = {
+				vehicles_tech_level_scientific = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech exited"
+			}
+		}
+	}
+	################################
+	# Downloading Naval Schematics #
+	################################
+	focus = {
+		id = zetan_download_naval_schematics
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_secrets_of_the_wasteland
+		prerequisite = {
+			focus = zetan_secrets_of_the_wasteland
+		}
+		available = {
+			AND = {
+				controls_state = 755
+				ARM = {
+					OR = {
+						AND = {
+							exists = yes
+							is_subject_of = ROOT
+						}
+						exists = no
+					}
+				}
+				has_tech = naval_tech_level_settler
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech entered"
+			}
+			set_technology = {
+				naval_tech_level_scientific = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech exited"
+			}
+		}
+	}
+	##################################
+	# Personal Protection From Metal #
+	##################################
+	focus = {
+		id = zetan_personal_protection_from_metal
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 3
+		y = 1
+		relative_position_id = zetan_secrets_of_the_wasteland
+		prerequisite = {
+			focus = zetan_secrets_of_the_wasteland
+		}
+		available = {
+			AND = {
+				controls_state = 157
+				BOS = {
+					OR = {
+						AND = {
+							exists = yes
+							is_subject_of = ROOT
+						}
+						exists = no
+					}
+				}
+				has_tech = power_armour_tech_level_settler
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech entered"
+			}
+			set_technology = {
+				power_armour_tech_level_scientific = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_implant_tech exited"
+			}
+		}
+	}
+}

@@ -1,0 +1,151 @@
+﻿capital = 389
+oob = "UFO_2275"
+
+### Caps wage laws
+set_country_flag = army_wages_disabled
+
+set_technology = {
+	## Tech levels
+
+	# Tribal and Intermediate Power Armour Tech from focuses
+	# Scientific Power Armour Tech from conquering Brotherhood of Steel
+
+	# Intermediate Vehicles Tech from focuses
+	# Scientific Vehicles Tech from conquering The Eighties
+	vehicles_tech_level_tribal = 1
+
+	# Intermediate Naval Tech from focuses
+	# Scientific Naval Tech from conquering Ejército Mexicano (Santa Anna)
+	naval_tech_level_tribal = 1
+
+	# Implant technology from conquering Twin Mothers or Vault City
+
+	# Infantry tech
+	# Scientific Infantry Tech from focuses
+	infantry_tech_level_tribal = 1
+	infantry_tech_level_settler = 1
+
+	# Support tech
+	# Scientific Support Tech from focuses
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+
+	# Special forces
+	# Scientific Special Forces Tech from focuses
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+
+	# Robotics tech
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
+	robotics_tech_level_scientific = 1
+
+	# Air tech
+	# Scientific Air Tech from focuses
+	air_tech_level_tribal = 1
+	air_tech_level_settler = 1
+
+	# Tool procurement tech
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	tools_tech_level_scientific = 1
+
+	# Habitation tech
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	habitation_tech_level_scientific = 1
+
+	# Exploitation tech
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	exploitation_tech_level_scientific = 1
+
+	# Electronics tech
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+	electronics_tech_level_scientific = 1
+
+
+	## Starting technologies
+	standard_weaponry_tech = 1
+	ballistic_weaponry_tech_1 = 1
+	basic_industry_tech = 1
+	specialized_industry_tech_1 = 1
+	tool_engineering = 1
+	maketool_engineering_1 = 1
+	plasma_unlock_tech = 1
+	robot_automation_tech = 1
+
+
+	## Nation advancement level
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+
+
+	# Implant tech visibility
+	implant_tech_visibility_tech = 1
+}
+
+# Following section was left untouched because I do not have Man the Guns, unfortunately. :(
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		nautics_tech_1 = 1
+		light_navy_hull_tech_1 = 1
+		medium_navy_hull_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		nautics_tech_non_mtg_1 = 1
+		light_navy_hull_tech_non_mtg_1 = 1
+		medium_navy_hull_tech_non_mtg_1 = 1
+	}
+}
+
+set_stability = 0.8
+set_war_support = 1
+set_research_slots = 4
+
+# Core all states originally belonging to Sky Reavers
+add_state_core = 389
+add_state_core = 75
+add_state_core = 201
+add_state_core = 329
+add_state_core = 333
+add_state_core = 463
+
+# Followers of the Apocalypse disabled for aliens
+set_country_flag = do_not_spread_followers_from_this_tag
+set_country_flag = do_not_spread_followers_to_this_tag
+
+add_ideas = {
+	zetan_alien
+	zetan_advanced
+}
+
+set_politics = {
+	ruling_party = elites
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 0
+	elites = 100
+	intellectuals = 0
+	ruler = 0
+}
+
+create_country_leader = {
+	name = "Zetan Commander"
+	desc = "Zetan_Commander_DESC"
+	picture = "portrait_zetan.dds"
+	expire = "3000.1.1"
+	ideology = militarist_technocracy
+}

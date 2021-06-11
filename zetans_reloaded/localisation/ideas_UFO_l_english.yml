@@ -1,0 +1,37 @@
+﻿l_english:
+  # Staring national spirits
+  zetan_alien:0 "Strangers in a Strange Land"
+  zetan_alien_desc:0 "The Zetans are from another world and have no way to communicate with the inhabitants of Earth."
+
+  zetan_advanced:0 "Alien Knowledge"
+  zetan_advanced_desc:0 "The Zetans are highly advanced, otherworldly entities with abilities which might as well be magic to the occupants of the wasteland."
+
+  # Starting debuffs
+  zetan_crashlanded_idea:0 "Crash-landed"
+  zetan_crashlanded_idea_desc:0 "The Zetans are not suited to living on this planet."
+
+  zetan_alone_idea:0 "Alone"
+  zetan_alone_idea_desc:0 "Cut off from the Zetan Homeworld, the Zetans must make do with what is available - which is not much."
+  
+  zetan_afraid_idea:0 "Afraid"
+  zetan_afraid_idea_desc:0 "The Zetans have had some sketchy encounters with humans."
+
+  # Afraid + ideas
+  zetan_cautious:0 "Cautious"
+  zetan_cautious_desc:0 "The Zetans might not be opposed to learning more about this planet."
+
+  zetan_curious:0 "Curious"
+  zetan_curious_desc:0 "The Zetans are interested in learning more... if it's safe."
+
+  zetan_eager:0 "Eager"
+  zetan_eager_desc:0 "The Zetans want to know more and are no longer afraid of venturing further."
+
+  # Afraid - ideas
+  zetan_frantic:0 "Frantic"
+  zetan_frantic_desc:0 "The Zetans would rather not have any visitors."
+
+  zetan_terrified:0 "Terrified"
+  zetan_terrified_desc:0 "The Zetans want nothing more than to be left alone, thank you very much."
+
+  zetan_paranoid:0 "Paranoid"
+  zetan_paranoid_desc:0 "The Zetans want nothing to do with this planet."
