@@ -403,6 +403,326 @@ focus_tree = {
 			}
 		}
 	}
+	###################
+	# Dessert Rangers #
+	###################
+	focus = {
+		id = zetan_conquer_rangers
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -3
+		y = 1
+		relative_position_id = zetan_taking_control
+		prerequisite = {
+			focus = zetan_taking_control
+		}
+		available = {
+			OR = {
+				is_neighbor_of = DES
+				NOT = {
+					country_exists = DES
+				}
+			}
+		}
+		bypass = {
+			DES = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = DES
+		completion_reward = {
+			DES = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	####################
+	# Bear Necessities #
+	####################
+	focus = {
+		id = zetan_conquer_ncr
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_conquer_rangers
+		prerequisite = {
+			focus = zetan_conquer_rangers
+		}
+		available = {
+			OR = {
+				is_neighbor_of = NCR
+				NOT = {
+					country_exists = NCR
+				}
+			}
+		}
+		bypass = {
+			NCR = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = NCR
+		completion_reward = {
+			NCR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	##############
+	# White Legs #
+	##############
+	focus = {
+		id = zetan_conquer_white_legs
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_taking_control
+		prerequisite = {
+			focus = zetan_taking_control
+		}
+		available = {
+			OR = {
+				is_neighbor_of = WHT
+				NOT = {
+					country_exists = WHT
+				}
+			}
+		}
+		bypass = {
+			WHT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = WHT
+		completion_reward = {
+			WHT = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	####################
+	# Whip the Scourge #
+	####################
+	focus = {
+		id = zetan_conquer_eighties
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_conquer_white_legs
+		prerequisite = {
+			focus = zetan_conquer_white_legs
+		}
+		available = {
+			OR = {
+				is_neighbor_of = EHT
+				NOT = {
+					country_exists = EHT
+				}
+			}
+		}
+		bypass = {
+			EHT = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = EHT
+		completion_reward = {
+			EHT = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	##################
+	# The Shiny City #
+	##################
+	focus = {
+		id = zetan_conquer_new_vegas
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_taking_control
+		prerequisite = {
+			focus = zetan_taking_control
+		}
+		available = {
+			OR = {
+				is_neighbor_of = VEG
+				NOT = {
+					country_exists = VEG
+				}
+			}
+		}
+		bypass = {
+			VEG = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = VEG
+		completion_reward = {
+			VEG = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	#####################
+	# Bulldoze the Bull #
+	#####################
+	focus = {
+		id = zetan_conquer_caesar
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_conquer_new_vegas
+		prerequisite = {
+			focus = zetan_conquer_new_vegas
+		}
+		available = {
+			OR = {
+				is_neighbor_of = CES
+				NOT = {
+					country_exists = CES
+				}
+			}
+		}
+		bypass = {
+			CES = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = CES
+		completion_reward = {
+			CES = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	####################
+	# The Little Khans #
+	####################
+	focus = {
+		id = zetan_conquer_khans
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 3
+		y = 1
+		relative_position_id = zetan_taking_control
+		prerequisite = {
+			focus = zetan_taking_control
+		}
+		available = {
+			OR = {
+				is_neighbor_of = KHA
+				NOT = {
+					country_exists = KHA
+				}
+			}
+		}
+		bypass = {
+			KHA = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
+		will_lead_to_war_with = KHA
+		completion_reward = {
+			KHA = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	######################
+	# The Canyons Beyond #
+	######################
+	focus = {
+		id = zetan_conquer_canyons
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_conquer_khans
+		prerequisite = {
+			focus = zetan_conquer_khans
+		}
+		available = {
+			OR = {
+				is_neighbor_of = SOR
+				NOT = {
+					country_exists = SOR
+				}
+				is_neighbor_of = SLE
+				NOT = {
+					country_exists = SLE
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				SOR = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+				SLE = {
+					all_core_land_owned_by_prev_sphere = yes
+				}
+			}
+		}
+		will_lead_to_war_with = SOR
+		will_lead_to_war_with = SLE
+		completion_reward = {
+			SOR = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+			SLE = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
+		}
+	}
+	########################
+	# Prepare the Invasion #
+	########################
+	focus = {
+		id = zetan_prepare_invasion
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 3
+		relative_position_id = zetan_taking_control
+		prerequisite = {
+			focus = zetan_taking_control
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_prepare_invasion entered"
+			}
+			add_ideas = zetan_prepare_invasion_idea
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_prepare_invasion exited"
+			}
+		}
+	}
 	##############
 	# Curiousity #
 	##############
@@ -823,6 +1143,122 @@ focus_tree = {
 			}
 		}
 	}
+	####################
+	# Metal Earthlings #
+	####################
+	focus = {
+		id = zetan_metal_earthlings
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 0
+		y = 1
+		relative_position_id = zetan_take_air
+		prerequisite = {
+			focus = zetan_take_land
+		}
+		prerequisite = {
+			focus = zetan_take_water
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_metal_earthlings entered"
+			}
+			set_technology = {
+				power_armour_tech_level_tribal = 1
+				power_armour_tech_level_settler = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_metal_earthlings exited"
+			}
+		}
+	}
+	########################
+	# Stockpiling Weaponry #
+	########################
+	focus = {
+		id = zetan_stockpile_weapons
+		icon = GFX_goal_area_51
+		cost = 60
+		x = -1
+		y = 1
+		relative_position_id = zetan_metal_earthlings
+		prerequisite = {
+			focus = zetan_metal_earthlings
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_weapons entered"
+			}
+			add_equipment_to_stockpile = {
+				type = plasma_equipment_1
+				amount = 1000
+				producer = USA
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_weapons exited"
+			}
+		}
+	}
+	########################
+	# Stockpiling Currency #
+	########################
+	focus = {
+		id = zetan_stockpile_caps
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_metal_earthlings
+		prerequisite = {
+			focus = zetan_metal_earthlings
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_caps entered"
+			}
+			set_temp_variable = { caps_to_add = 300 }
+            add_caps = yes
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_caps exited"
+			}
+		}
+	}
+	###################
+	# Actual Weaponry #
+	###################
+	focus = {
+		id = zetan_actual_weaponry
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 1
+		y = 1
+		relative_position_id = zetan_stockpile_weapons
+		prerequisite = {
+			focus = zetan_stockpile_weapons
+		}
+		prerequisite = {
+			focus = zetan_stockpile_caps
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_caps entered"
+			}
+			set_technology = {
+				infantry_tech_level_scientific = 1
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_stockpile_caps exited"
+			}
+		}
+	}
 	##############
 	# Adaptation #
 	##############
@@ -1124,6 +1560,37 @@ focus_tree = {
 			if = {
 				limit = { has_global_flag = debug_logs }
 				log = "[GetDateText]: [Root.GetName] zetan_implant_tech exited"
+			}
+		}
+	}
+	#############
+	# Call Home #
+	#############
+	focus = {
+		id = zetan_call_home
+		icon = GFX_goal_area_51
+		cost = 60
+		x = 8
+		y = 12
+		available = {
+			has_completed_focus = zetan_prepare_invasion
+			has_completed_focus = zetan_home_in_the_wastes
+			has_completed_focus = zetan_actual_weaponry
+			has_tech = advanced_centimetric_radar
+		}
+		completion_reward = {
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_call_home entered"
+			}
+			add_manpower = 500000
+			swap_ideas = {
+				remove_idea = mobilization_law_prime_zetans
+				add_idea = mobilization_law_invasion_force
+			}
+			if = {
+				limit = { has_global_flag = debug_logs }
+				log = "[GetDateText]: [Root.GetName] zetan_call_home exited"
 			}
 		}
 	}

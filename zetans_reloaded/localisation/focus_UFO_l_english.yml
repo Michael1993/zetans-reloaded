@@ -40,6 +40,34 @@
   zetan_taking_control:0 "Taking Control"
   zetan_taking_control_desc:0 "It is time to take control of the situation."
 
+  # War goal focuses
+  zetan_prepare_invasion:0 "Prepare Invasion"
+  zetan_prepare_invasion_desc:0 "The Earthlings should be ruled by us, since we are clearly superior. We will show them just how superior."
+
+  zetan_conquer_rangers:0 "Dessert Rangers"
+  zetan_conquer_rangers_desc:0 "To our north, there are some nice lands filled with earthlings in weird goggles. This land should belong to us."
+
+  zetan_conquer_ncr:0 "Bear Necessities"
+  zetan_conquer_ncr_desc:0 "A huge land ruled by a single, ineffective government. We should show them how efficient bureaucracy should be."
+
+  zetan_conquer_white_legs:0 "White Legs"
+  zetan_conquer_white_legs_desc:0 "We should conquer the White Legs."
+
+  zetan_conquer_eighties:0 "Whip the Scourge"
+  zetan_conquer_eighties_desc:0 "We will whip the the scourge of Utah into shape."
+
+  zetan_conquer_new_vegas:0 "The Shiny City"
+  zetan_conquer_new_vegas_desc:0 "A city ruled by robots? Almost civilized. We shall show them the true meaning of civilization."
+
+  zetan_conquer_caesar:0 "Bulldoze the Bull"
+  zetan_conquer_caesar_desc:0 "A horde of earthlings, clinging to a militaristic past. How brutish. Let us conquer them."
+
+  zetan_conquer_khans:0 "The Little Khans"
+  zetan_conquer_khans_desc:0 "The only way the khans could be great if they were under our leadership."
+
+  zetan_conquer_canyons:0 "The Canyons Beyond"
+  zetan_conquer_canyons_desc:0 "Beyond the khans, a land filled with sad and sleepy earthlings. This should be easy."
+
   # Afraid + focuses
   zetan_curiosity:0 "Curiosity"
   zetan_curiosity_desc:0 "This world we found ourselves on is strange and full of secrets. We should find out more!"
@@ -88,6 +116,18 @@
   zetan_take_land:0 "Take the Land!"
   zetan_take_land_desc:0 ""
 
+  zetan_metal_earthlings:0 "Metal Earthlings"
+  zetan_metal_earthlings_desc:0 "During our time here we have encountered earthlings in weird metal suits. They call themselves \"The Brothers of Iron\" or something like that. After some probing, we got their schematics from them."
+
+  zetan_stockpile_weapons:0 "Stockpiling Weaponry"
+  zetan_stockpile_weapons_desc:0 "We need to make sure to always have enough weapons. Thankfully the military base at Area 51 has decent inventory."
+
+  zetan_stockpile_caps:0 "Stockpiling Currency"
+  zetan_stockpile_caps_desc:0 "While using tiny pieces of cheap metal as currency is clearly inferior, since we do not have access to Zetan crystals, we should make sure to at least have some 'bottlecaps'."
+
+  zetan_actual_weaponry:0 "Decent Weapons"
+  zetan_actual_weaponry_desc:0 "We understand earthling materials and technology on a level to produce the finest weapons this place is capable of."
+
   # Crash-landed focus advancements
   zetan_adaptation:0 "Adaptation"
   zetan_adaptation_desc:0 ""
@@ -97,6 +137,10 @@
 
   zetan_home_in_the_wastes:0 "Home in the Wastes"
   zetan_home_in_the_wastes_desc:0 ""
+
+  # Call in the invasion force!
+  zetan_call_home:0 "Call Home"
+  zetan_call_home_desc:0 "Finally, we can signal homeworld and call in the invasion forces to conquer this planet!"
 
   # Secrets of the Wasteland focuses
   zetan_secrets_of_the_wasteland:0 "Secrets of the Wasteland"
@@ -113,5 +157,5 @@
   zetan_download_naval_schematics_desc:0 "Earthlings used to have access to creative naval machine schematics. It seems this weird sentient computer still has some of them."
 
   zetan_personal_protection_from_metal:0 "Personal Protection From Metal"
-  zetan_personal_protection_from_metal_desc:0 "What a simplistic idea, encasing yourself in metal for personal protection. Nevertheless, it's the best we can do on this backwards planet."
+  zetan_personal_protection_from_metal_desc:0 "So, the \"Brotherhood of Steel\". Seems they have been still hiding some secrets about their metal suits. Now, these secrets are ours."
   

@@ -35,3 +35,7 @@
 
   zetan_paranoid:0 "Paranoid"
   zetan_paranoid_desc:0 "The Zetans want nothing to do with this planet."
+
+  # Invasion idea
+  zetan_prepare_invasion_idea:0 "Invaders from Outer Space"
+  zetan_prepare_invasion_idea_desc:0 "The Zetans are ready to conquer Earth."

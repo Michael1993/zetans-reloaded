@@ -5,5 +5,13 @@
   mobilization_law_prime_zetans:0 "Prime Zetans"
   mobilization_law_prime_zetans_desc:0 "Only the very best of us should fight the dirty earthlings."
 
+  mobilization_law_invasion_force:0 "Invasion Force"
+  mobilization_law_invasion_force_desc:0 "Our invasion forces from Homeworld have arrived."
+
   is_alien_nation_tt:0 "Is an §Yalien§! nation"
   is_not_alien_nation_tt:0 "Is §Rnot§! an §Yalien§! nation"
+
+  zetan_closed_economy:0 "No Trading with Earthlings"
+
+  zetan_undesirables_law_none:0 "No Undesirables"
+  zetan_undesirables_law_none_desc:0 "Zetans do not have unsavory elements amongst our ranks. Our army is cohesive and superiour."

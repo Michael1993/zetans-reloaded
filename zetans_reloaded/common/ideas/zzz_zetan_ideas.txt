@@ -72,7 +72,6 @@ ideas = {
 				production_speed_arms_factory_factor = -0.40
 				production_speed_dockyard_factor = -0.40
 			}
-			name = zetan_alone_idea
 		}
 		zetan_afraid_idea = {
 			picture = chi_army_corruption3
@@ -249,6 +248,22 @@ ideas = {
 				out_of_supply_factor = 0.10
 			}
 			name = zetan_crashlanded_idea
+		}
+		##########################
+		# Preparing the Invasion #
+		##########################
+		zetan_prepare_invasion_idea = {
+			picture = generic_ufo_idea
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				justify_war_goal_time = -0.25
+			}
 		}
 	}
 	hidden_ideas = {

@@ -125,9 +125,12 @@ add_state_core = 463
 set_country_flag = do_not_spread_followers_from_this_tag
 set_country_flag = do_not_spread_followers_to_this_tag
 
-# Uses unique manpower and outsider recruitment laws
+# Uses unique laws
 set_country_flag = has_unique_manpower_law
 set_country_flag = has_unique_outsider_laws
+set_country_flag = has_unique_trade_laws
+set_country_flag = has_unique_undesirable_laws
+set_country_flag = no_mutants_allowed
 set_country_flag = is_alien_nation
 
 add_ideas = {
@@ -135,6 +138,8 @@ add_ideas = {
 	zetan_advanced
 	outsider_law_no_earthlings
 	mobilization_law_prime_zetans
+	zetan_closed_economy
+	zetan_undesirables_law_none
 }
 
 set_politics = {
